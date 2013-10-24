@@ -1,15 +1,15 @@
 %define upstream_name    Math-Base36
-%define upstream_version 0.09
+%define upstream_version 0.12
 
 Name:		perl-%{upstream_name}
 Version:	%perl_convert_version %{upstream_version}
-Release:	3
+Release:	1
 
 Summary:	Encoding and decoding of base36 strings
 License:	GPL+ or Artistic
 Group:		Development/Perl
 Url:		http://search.cpan.org/dist/%{upstream_name}
-Source0:	http://www.cpan.org/modules/by-module/Math/%{upstream_name}-%{upstream_version}.tar.gz
+Source0:	http://www.cpan.org/modules/by-module/Math/Math-Base36-%{upstream_version}.tar.gz
 
 BuildRequires:	perl-devel
 BuildRequires:	perl(ExtUtils::MakeMaker)
@@ -57,3 +57,4 @@ perl Makefile.PL INSTALLDIRS=vendor
 
 * Fri Jul 16 2010 cpan2dist 0.07-1mdv
 - initial mdv release, generated with cpan2dist
+
