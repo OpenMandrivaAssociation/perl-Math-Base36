@@ -1,15 +1,15 @@
 %define upstream_name    Math-Base36
-%define upstream_version 0.12
+%define upstream_version 0.14
 
 Name:		perl-%{upstream_name}
-Version:	%perl_convert_version %{upstream_version}
-Release:	3
+Version:	%{upstream_version}
+Release:	1
 
 Summary:	Encoding and decoding of base36 strings
 License:	GPL+ or Artistic
 Group:		Development/Perl
-Url:		https://search.cpan.org/dist/%{upstream_name}
-Source0:	http://www.cpan.org/modules/by-module/Math/Math-Base36-%{upstream_version}.tar.gz
+Url:		https://github.com/bricas/math-base36
+Source0:	https://cpan.metacpan.org/authors/id/B/BR/BRICAS/Math-Base36-%{upstream_version}.tar.gz
 
 BuildRequires:	make
 BuildRequires:	perl-devel
